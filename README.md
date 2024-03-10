@@ -26,7 +26,7 @@ I am also familiar with logging and setting up selenium grid for parallel testin
 
 Looking forward to discuss assignment with you, and getting more insight how to make it even better!
 
-Best regards,
+Cheers,
 
 Nenad Cvetic
 
