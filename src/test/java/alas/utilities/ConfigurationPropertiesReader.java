@@ -7,8 +7,10 @@ import java.util.Properties;
 public class ConfigurationPropertiesReader {
 
 
+    //creating object of properties
     private static Properties properties = new Properties();
 
+    //using static method to load file in java memory
     static {
 
         try {
@@ -29,6 +31,7 @@ public class ConfigurationPropertiesReader {
 
     }
 
+    //method to getProperty from configuration.properties file
     public static String getProperty (String keyword) {
 
         return properties.getProperty(keyword);

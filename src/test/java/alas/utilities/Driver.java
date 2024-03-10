@@ -12,18 +12,28 @@ import java.util.concurrent.TimeUnit;
 
 public class Driver {
 
+    /*
+        Creating private constructor to close access to the object from outside the class
+     */
     private Driver () {
 
     }
 
+    //creating static WebDriver since we will use it in static method
     private static WebDriver driver;
 
+    //creating method which will return same instance of the driver when we call it.
     public static WebDriver getDriver () {
 
         if(driver == null) {
 
             String browser = "";
 
+            /*
+                If browser type is passed from the terminal, use that one
+                Otherwise, use the browser type which is specified in configuration.properties file
+
+             */
             if(System.getProperty("BROWSER") == null) {
 
                 browser = ConfigurationPropertiesReader.getProperty("browser");
@@ -36,6 +46,9 @@ public class Driver {
 
             System.out.println("Browser: " + browser);
 
+            /*
+                switch block where depending on the passed browser type, different diver is set
+             */
             switch (browser) {
 
                 case "chrome":
@@ -77,7 +90,7 @@ public class Driver {
 
     }
 
-
+    //terminating driver session. Method used in Hooks class with @After annotation.
     public static void closeDriver () {
 
         if (driver != null){

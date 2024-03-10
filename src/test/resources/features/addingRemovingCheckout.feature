@@ -8,7 +8,7 @@ Feature: Adding, removing items from the shopping cart and checkout
     And user clicks on login button
     Then verify that user is successfully logged in
 
-
+@wip2
 Scenario: user is able to add items to the cart
   When user adds and item from the list to the cart
   Then verify that cart badge is updated correctly

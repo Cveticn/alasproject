@@ -5,6 +5,10 @@ import com.github.javafaker.Faker;
 
 public class ApiUtils {
 
+    /*
+        Method for creating user
+        Using faker library to generate random data each time
+     */
     public static User createUser () {
 
         Faker faker = new Faker();

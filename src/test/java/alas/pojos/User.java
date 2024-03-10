@@ -1,5 +1,10 @@
 package alas.pojos;
 
+
+/*
+    Creating pojo class with the fields of our json object
+    This way, jackson library can map each field and can perform serialization or de-serialization.
+ */
 public class User {
 
     private int id;

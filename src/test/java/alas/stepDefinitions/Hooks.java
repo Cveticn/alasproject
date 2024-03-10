@@ -2,13 +2,15 @@ package alas.stepDefinitions;
 
 import alas.utilities.Driver;
 import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
 
+    /*
+        Method for creating screenshot after failed scenario
+     */
     @After
     public void tearDown(Scenario scenario){
         if(scenario.isFailed()){
@@ -20,6 +22,7 @@ public class Hooks {
 
     }
 
+    //terminating driver session after scenario is completed
     @After
     public void closeDriver () {
 
