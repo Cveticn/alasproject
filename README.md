@@ -2,7 +2,7 @@ Hello!
 
 For the purpose of this assignment, I implemented **Cucumber BDD** (Behaviour driven development) framework.
 For the first task, I used **Maven** as build automation tool, **Selenium** to automate the browser, **JUnit** for assertions and **Java** as a programming language.
-Test cases are written in resources/feature files, using Gherkin syntax. Each scenario can be marked with different annotaion and can be run separately, depending on the need.
+Test cases are written in resources/feature files, using Gherkin syntax. Each scenario can be marked with different annotation and can be run separately, depending on the needs.
 
 Tests are run from CucumberRunner class. In case we want to run every test case from every feature file, we don't have to specify any tags. 
 However, if we want to run specific scenario, we can label it in feature file, above scenario keyword (e.g. @regression). If we provide tag ="@regression" in CucumberRunner class, only tests marked with @regression tag will be ran.
@@ -22,9 +22,9 @@ Test cases are written in addingUpdatingRemovingUsers.feature file. Similarliy t
 Also, I used javafaker library to generate random testing data.
 
 Notes: 
-I am also familiar with logging and setting up selenium grid for parallel testing, and using Jenkins for creating jobs to run test suites, however I didn't have enough time to implement those functionalites as well.
+I am also familiar with logging and setting up selenium grid for parallel testing and using Jenkins for creating jobs to run test suites, however I didn't have enough time to implement those functionalites as well.
 
-Looking forward to discuss assignment with you, and getting more insight how to make it even better!
+Looking forward to discuss this assignment with you, and getting more insight how to make it even better!
 
 Cheers,
 
