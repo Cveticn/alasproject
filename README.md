@@ -21,3 +21,14 @@ Test cases are written in addingUpdatingRemovingUsers.feature file. Similarliy t
 
 Also, I used javafaker library to generate random testing data.
 
+Notes: 
+I am also familiar with logging and setting up selenium grid for parallel testing, and using Jenkins for creating jobs to run test suites, however I didn't have enough time to implement those functionalites as well.
+
+Looking forward to discuss assignment with you, and getting more insight how to make it even better!
+
+Best regards,
+
+Nenad Cvetic
+
+
+
